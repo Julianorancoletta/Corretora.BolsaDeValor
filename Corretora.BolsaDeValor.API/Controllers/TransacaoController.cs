@@ -1,17 +1,14 @@
-﻿using Corretora.BolsaDeValor.Core.Domain;
-using Corretora.BolsaDeValor.Infra.Intaface;
-using Delivery.Core.DomainObjects;
+﻿using Corretora.BolsaDeValor.Infra.Intaface;
 using Delivery.Core.Mediator;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using System;
 using Corretora.BolsaDeValor.API.Application.Commands.Acoes;
 using Delivery.WebAPI.Core.Controllers;
-using Microsoft.AspNetCore.Authorization;
 
 namespace Corretora.BolsaDeValor.API.Controllers
 {
     [Route("api/[controller]")]
+    
     public class TransacaoController : MainController
     {
         private readonly IMediatorHandler _mediator;
